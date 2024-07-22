@@ -55,12 +55,13 @@ section {
 }
 
 .about img {
-    width: 150px;
-    height: 150px;
-    border-radius: 10%;
+    width: 100%;
+    max-width: 150px; /* This sets a maximum width for the image */
+    height: auto; /* This maintains the aspect ratio */
+    border-radius: 50%;
     display: block;
     margin: 1rem auto;
-    object-fit: contain; /* Ensures the entire image is visible within the area */
+    object-fit: cover; /* This ensures the image covers the designated area */
 }
 
 .projects .project {
