@@ -3,11 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My GitHub Pages</title>
+    <title>Melissa Lindskär - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>Welcome to my website hosted on GitHub Pages.</p>
+    <header>
+        <div class="container">
+            <h1>Melissa Lindskär</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="images/profile.jpeg" alt="Profile Picture">
+            <p>Hello! I'm Melissa Lindskär, a QA Engineer dedicated to ensuring the highest standards in software quality...</p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <img src="images/project1.jpg" alt="Project 1">
+                <h3>Project Title</h3>
+                <p>Project description goes here...</p>
+            </div>
+            <div class="project">
+                <img src="images/project2.jpg" alt="Project 2">
+                <h3>Project Title</h3>
+                <p>Project description goes here...</p>
+            </div>
+            <div class="project">
+                <img src="images/project3.jpg" alt="Project 3">
+                <h3>Project Title</h3>
+                <p>Project description goes here...</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/your-email" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Melissa Lindskär. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
